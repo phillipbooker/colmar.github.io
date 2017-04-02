@@ -1,0 +1,317 @@
+html{
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+body{
+  /*margin: 0;*/
+  /*overflow: scroll;;*/
+}
+
+.container{
+  margin: 0;
+}
+
+/*#banner,
+#practice,
+#learning,
+#thesis,
+footer{
+  width: 100%;
+}*/
+
+/*Header*/
+.header{
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+.small-header{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .small-header{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+  }
+  .header{
+    display: none;
+  }
+}
+
+.logo-box{
+  display: flex;
+  align-items: center;
+}
+
+#dark{
+  color: gray;
+}
+
+#light{
+  color: lightgray;
+}
+
+.header ul{
+  display: flex;
+}
+
+ul li{
+  padding: 16px;
+  list-style: none;
+}
+
+/*Banner*/
+#banner{
+  display: flex;
+  justify-content: space-around;
+  /*position: relative;*/
+  /*top: 64px;*/
+
+  /*height: 400px;*/
+  width: 100%;
+  padding: 32px 24px;
+  background-color: lightgray;
+  align-items: center;
+}
+
+#banner img{
+  width: 100%;
+  height: 100%;
+}
+
+.learn-pic{
+  width: 60%;
+}
+
+.learn-box{
+  color: gray;
+  margin-left: 40px;
+  width: 35%;
+  padding-right: 150px;
+  max-width: 250px;
+}
+
+#banner span{
+  display: block;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+}
+
+@media only screen and (max-width: 480px){
+  #banner{
+    margin-top: 180px;
+    max-width: 480px;
+    padding: 25px;
+  }
+  .learn-box{
+    width: 100%;
+    padding: 0;
+  }
+
+  .learn-box h1, h4, span{
+    margin: 15px 0;
+  }
+
+  .learn-pic{
+    display: none;
+  }
+
+}
+
+/*Practice Box*/
+#practice{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*#practice .container{
+  display: flex;
+}*/
+
+.practice-hurt{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  color: gray;
+  padding: 32px 24px;
+  justify-content:
+}
+
+.practice-hurt img, video{
+  /*height: 100%;*/
+  width: 100%;
+}
+
+.practice-hurt span{
+  margin: 12px 0;
+}
+
+/*Right Column*/
+.practice-our{
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  border-left: 1px solid lightgray;
+}
+
+.practice-feature{
+  display: flex;
+  color: gray;
+  width: 100%;
+  padding: 16px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.practice-feature:hover{
+  background-color: lightgray;
+}
+
+.feature-image{
+  /*width: 35%;*/
+  height: 150px;
+  width: 150px;
+}
+
+.feature-image img{
+  width: 100%;
+}
+
+.feature-text{
+  width: 65%;
+  padding-left: 10px;
+}
+
+.feature-text span{
+  color: teal;
+}
+
+@media only screen and (max-width: 480px){
+  .practice-hurt{
+    display: none;
+  }
+  .practice-feature{
+    flex-direction: column;
+  }
+  .feature-text{
+    width: 100%;
+  }
+}
+
+/*Learning*/
+#learning{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  /*width: 100%;*/
+  padding: 32px 100px;
+}
+
+#learning-mobile{
+  display: none;
+}
+
+#learning h1{
+  color:gray;
+  align: center;
+}
+
+.learning-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.major{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: gray;
+  padding: 32px 24px;
+  background-color: white;
+  padding: 0;
+}
+
+.major h1, span{
+  padding: 12px 12px;
+}
+
+.major img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px){
+  #learning{
+    display: none;
+  }
+
+  #learning-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px;
+  }
+
+  #learning-mobile span{
+    background-color: gray;
+    padding 16px;
+    text-align: center;
+  }
+
+}
+
+#thesis{
+  display: flex;
+  justify-content: space-between;
+}
+#thesis-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  #thesis{
+    display: none;
+  }
+  #thesis-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #thesis-mobile h1{
+    text-align: center;
+  }
+}
+
+footer{
+  width: 100%;
+  height: 64px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px){
+  .terms{
+    display: none;
+  }
+}
