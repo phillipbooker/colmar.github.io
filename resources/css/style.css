@@ -1,24 +1,40 @@
 html{
   font-family: Helvetica;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  /*margin: 0;*/
+  margin: 0;
   /*overflow: scroll;;*/
+  background-color: dimgray;
 }
 
 .container{
   margin: 0;
 }
 
-/*#banner,
+h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: dimgray;
+}
+
+h3{
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: dimgray;
+}
+
+
+#banner,
 #practice,
 #learning,
 #thesis,
 footer{
-  width: 100%;
-}*/
+  max-width: 1300px;
+}
 
 /*Header*/
 .header{
@@ -72,10 +88,14 @@ ul li{
   list-style: none;
 }
 
+ul li:hover{
+  background-color: lightgray;
+}
+
 /*Banner*/
 #banner{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /*position: relative;*/
   /*top: 64px;*/
 
@@ -96,11 +116,18 @@ ul li{
 }
 
 .learn-box{
-  color: gray;
+  color: dimgray;
   margin-left: 40px;
-  width: 35%;
+  /*width: 40%;*/
+  width: 350px;
   padding-right: 150px;
-  max-width: 250px;
+  /*max-width: 350px;*/
+}
+
+.learn-box > h1,
+.learn-box > h4,
+.learn-box > span{
+  padding: 16px 0;
 }
 
 #banner span{
@@ -122,8 +149,10 @@ ul li{
     padding: 0;
   }
 
-  .learn-box h1, h4, span{
-    margin: 15px 0;
+  .learn-box h1,
+  .learn-box h4,
+  .learn-box span{
+    padding: 16px 0;
   }
 
   .learn-pic{
@@ -137,6 +166,7 @@ ul li{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 /*#practice .container{
@@ -149,16 +179,25 @@ ul li{
   width: 60%;
   color: gray;
   padding: 32px 24px;
-  justify-content:
+  justify-content: space-between;
 }
 
 .practice-hurt img, video{
   /*height: 100%;*/
   width: 100%;
+  padding: 32px 0 32px 0;
 }
 
+.practice-hurt h2,
 .practice-hurt span{
-  margin: 12px 0;
+  margin: 0;
+  padding: 0 0 24px 0;
+}
+
+.practice-hurt h2{
+  font-weight: 800;
+  font-size: 2rem;
+  color: dimgray;
 }
 
 /*Right Column*/
@@ -195,10 +234,20 @@ ul li{
 .feature-text{
   width: 65%;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-text h3,
+.feature-text h4,
+.feature-text span{
+  padding: 4px 0;
 }
 
 .feature-text span{
-  color: teal;
+  color: blue;
+  padding: 4px 0;
 }
 
 @media only screen and (max-width: 480px){
@@ -207,9 +256,19 @@ ul li{
   }
   .practice-feature{
     flex-direction: column;
+    align-items: center;
   }
   .feature-text{
     width: 100%;
+    align-items: center;
+  }
+  .feature-image{
+    /*width: 100%;*/
+    padding: 2rem 0 2rem 0;
+  }
+  .feature-image img{
+    height: 150px;
+    width: 150px;
   }
 }
 
@@ -220,7 +279,7 @@ ul li{
   justify-content: center;
   align-items: center;
   background-color: lightgray;
-  /*width: 100%;*/
+  width: 100%;
   padding: 32px 100px;
 }
 
@@ -229,8 +288,10 @@ ul li{
 }
 
 #learning h1{
-  color:gray;
+  color: dimgray;
   align: center;
+  margin: 0;
+  padding: 0 0 32px 0;
 }
 
 .learning-row{
@@ -247,15 +308,17 @@ ul li{
   color: gray;
   padding: 32px 24px;
   background-color: white;
-  padding: 0;
+  padding: 0 0 15px 0;
 }
 
-.major h1, span{
-  padding: 12px 12px;
+.major h3,
+.major span{
+  padding: 6px 24px;
 }
 
 .major img{
   width: 100%;
+  padding-bottom: 12px;
 }
 
 @media only screen and (max-width: 480px){
@@ -269,12 +332,21 @@ ul li{
     justify-content: space-between;
     width: 100%;
     padding: 12px;
+    background-color: white;
+  }
+
+  #learning-mobile h1{
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   #learning-mobile span{
-    background-color: gray;
-    padding 16px;
+    background-color: lightgray;
+    padding: 16px;
     text-align: center;
+    margin-bottom: 8px;
+    color: dimgray;
+    font-weight: bold;
   }
 
 }
@@ -282,6 +354,8 @@ ul li{
 #thesis{
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  width: 100%;
 }
 #thesis-mobile{
   display: none;
@@ -295,6 +369,7 @@ ul li{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: white;
   }
   #thesis-mobile h1{
     text-align: center;
@@ -308,6 +383,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 @media only screen and (max-width: 480px){
