@@ -1,6 +1,14 @@
+/*
+Colors
+Light Blue #3B60E4
+Dark Blue #3B60E4
+Background Blue #74B3CE
+*/
+
 html{
   font-family: Helvetica;
   font-size: 16px;
+  color: lightgray;
   /*margin: 0;
   padding: 0;*/
 }
@@ -8,7 +16,7 @@ html{
 body{
   /*margin: 0;*/
   /*overflow: scroll;;*/
-  background-color: dimgray;
+  background-color: #74B3CE;
   width: 100%;
 }
 
@@ -19,13 +27,13 @@ body{
 h1{
   font-size: 2.5rem;
   font-weight: 800;
-  color: dimgray;
+  /*color: dimgray;*/
 }
 
 h3{
   font-size: 1.25rem;
   font-weight: bold;
-  color: dimgray;
+  /*color: dimgray;*/
 }
 
 /*Header*/
@@ -36,7 +44,7 @@ h3{
   align-items: center;
   width: 100%;
   z-index: 5;
-  background-color: white;
+  background-color: #74B3CE;
   margin: 0 auto;
 }
 
@@ -65,7 +73,7 @@ h3{
 }
 
 #dark{
-  color: gray;
+  color: #172A3A;
 }
 
 #light{
@@ -79,10 +87,11 @@ h3{
 ul li{
   padding: 16px;
   list-style: none;
+  border-radius: 15px;
 }
 
 ul li:hover{
-  background-color: lightgray;
+  background-color: #172A3A;
 }
 
 /*Banner*/
@@ -90,7 +99,7 @@ ul li:hover{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: lightgray;
+  background-color: #3B60E4;
   align-items: center;
   margin: 0 auto;
 }
@@ -99,6 +108,7 @@ ul li:hover{
   width: 100%;
   height: 100%;
   padding: 32px 40px 32px 24px;
+  border-radius: 50px;
 }
 
 .learn-pic{
@@ -106,7 +116,7 @@ ul li:hover{
 }
 
 .learn-box{
-  color: dimgray;
+  /*color: lightgray;*/
   margin-left: 40px;
   /*width: 40%;*/
   max-width: 350px;
@@ -118,14 +128,16 @@ ul li:hover{
 .learn-box > h4,
 .learn-box > span{
   padding: 16px 0;
+  /*color: lightgray;*/
 }
 
 #banner span{
   display: block;
-  background-color: gray;
-  color: white;
+  background-color: #172A3A;
+  /*color: white;*/
   text-align: center;
   padding: 8px 0;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 480px){
@@ -162,7 +174,7 @@ ul li:hover{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #74B3CE;
   margin: 0 auto;
 }
 
@@ -174,7 +186,6 @@ ul li:hover{
   display: flex;
   flex-direction: column;
   width: 60%;
-  color: gray;
   padding: 32px 24px;
   justify-content: space-between;
 }
@@ -185,6 +196,7 @@ ul li:hover{
   padding: 32px 0 32px 0;
 }
 
+
 .practice-hurt h2,
 .practice-hurt span{
   margin: 0;
@@ -194,7 +206,6 @@ ul li:hover{
 .practice-hurt h2{
   font-weight: 800;
   font-size: 2rem;
-  color: dimgray;
 }
 
 /*Right Column*/
@@ -207,7 +218,6 @@ ul li:hover{
 
 .practice-feature{
   display: flex;
-  color: gray;
   width: 100%;
   padding: 16px 0;
   justify-content: space-between;
@@ -215,17 +225,19 @@ ul li:hover{
 }
 
 .practice-feature:hover{
-  background-color: lightgray;
+  background-color: #172A3A;
 }
 
 .feature-image{
   /*width: 35%;*/
   height: 150px;
   width: 150px;
+  padding-left: 16px;
 }
 
 .feature-image img{
   width: 100%;
+  border-radius: 25px;
 }
 
 .feature-text{
@@ -243,7 +255,8 @@ ul li:hover{
 }
 
 .feature-text span{
-  color: blue;
+  color: lightblue;
+  font-weight: bold;
   padding: 4px 0;
 }
 
@@ -281,7 +294,7 @@ ul li:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: #3B60E4;
   width: 100%;
   margin: 0 auto;
   padding: 32px 0;
@@ -292,7 +305,6 @@ ul li:hover{
 }
 
 #learning h1{
-  color: dimgray;
   align: center;
   margin: 0;
   padding-bottom: 32px;
@@ -309,10 +321,11 @@ ul li:hover{
   display: flex;
   flex-direction: column;
   width: 30%;
-  color: gray;
+  color: #172A3A;
   padding: 32px 24px;
   background-color: white;
   padding: 0 0 15px 0;
+  border-radius: 25px;
 }
 
 .major h3,
@@ -323,6 +336,8 @@ ul li:hover{
 .major img{
   width: 100%;
   padding-bottom: 12px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 @media only screen and (max-width: 480px){
@@ -335,7 +350,7 @@ ul li:hover{
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    background-color: white;
+    background-color: #3B60E4;
     padding: 32px 0;
   }
 
@@ -345,14 +360,18 @@ ul li:hover{
   }
 
   #learning-mobile span{
-    background-color: lightgray;
+    background-color: #74B3CE;
     padding: 16px;
     text-align: center;
     margin-bottom: 8px;
     margin-left: 16px;
     margin-right: 16px;
-    color: dimgray;
+    border-radius: 15px;
     font-weight: bold;
+  }
+
+  #learning-mobile span:hover{
+    background-color: #172A3A;
   }
 
 }
@@ -361,7 +380,7 @@ ul li:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #74B3CE;
   width: 100%;
 }
 #thesis h1{
@@ -371,7 +390,6 @@ ul li:hover{
 .thesis-content{
   display: flex;
   justify-content: space-between;
-  background-color: white;
   width: 100%;
 }
 
@@ -387,7 +405,7 @@ ul li:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: white;
+    background-color: #74B3CE;
   }
   #thesis-mobile h1{
     text-align: center;
@@ -404,6 +422,7 @@ footer{
   align-items: center;
   background-color: white;
   margin: 0 auto;
+  color: #172A3A;
 }
 
 @media only screen and (max-width: 480px){
