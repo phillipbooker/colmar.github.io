@@ -8,7 +8,7 @@ Background Blue #74B3CE
 html{
   font-family: Helvetica;
   font-size: 16px;
-  color: lightgray;
+  color: floralwhite;
   /*margin: 0;
   padding: 0;*/
 }
@@ -25,7 +25,7 @@ body{
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   /*color: dimgray;*/
 }
@@ -35,6 +35,10 @@ h3{
   font-weight: bold;
   /*color: dimgray;*/
 }
+
+/*img{
+  max-width: 800px;
+}*/
 
 /*Header*/
 .header{
@@ -97,7 +101,7 @@ ul li:hover{
 /*Banner*/
 #banner{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   background-color: #3B60E4;
   align-items: center;
@@ -118,7 +122,7 @@ ul li:hover{
 .learn-box{
   /*color: lightgray;*/
   margin-left: 40px;
-  /*width: 40%;*/
+  width: 40%;
   max-width: 350px;
   padding: 32px 150px 32px 0;
   /*max-width: 350px;*/
@@ -212,7 +216,8 @@ ul li:hover{
 .practice-our{
   display: flex;
   flex-direction: column;
-  width: 423px;
+  /*width: 423px;*/
+  width: 40%;
   border-left: 1px solid lightgray;
 }
 
@@ -220,7 +225,7 @@ ul li:hover{
   display: flex;
   width: 100%;
   padding: 16px 0;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 1px solid lightgray;
 }
 
